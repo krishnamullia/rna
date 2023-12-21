@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Relightable Neural Assets">
+  <meta name="keywords" content="Relighting, Neural Assets, Relightalbe Neural Assets">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relightable Neural Assets</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script defer src="./static/js/fontawesome.all.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/95565a07d3.js" crossorigin="anonymous"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Relightable Neural Assets</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://krishnamullia.com/">Krishna Mullia</a>,</span>
+            <span class="author-block">
+              <a href="https://luanfujun.com">Fujun Luan</a>,
+            <span class="author-block">
+              <a href="https://www.sunxin.name/">Xin Sun</a>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.miloshasan.net">Miloš Hašan</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://research.adobe.com/">Adobe Research</a></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/rna_author_hq.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (author)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="./static/rna_author_lowres.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (author, low res)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.09398"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+
+              <hr style="width:100%;height:0.7px;background-color:rgba(0, 0, 0, 0.665);margin-top:1em">
+              <span class="rna">Relightable Neural Assets</span>, a neural representation for 3D assets with complex shading that supports<br> <strong>full relightability</strong> and <strong>full integration</strong> into existing production renderers for Monte Carlo path tracing.
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser_studio.png">
+      <h4 class="content has-text-justified">
+         We propose a compact relightable neural 3D asset representation for geometries with complex shading, such as the translucent Burley-Christensen shader combined with shading graphs in the lego and flowers, or fiber BCSDF model for blue and blonde curly-haired wigs that exhibit glossy highlights and strong multiple scattering. Our results are realistic and close to the path-tracing reference. Our representation combines explicit mesh (or fiber) geometry with a neural feature grid and an MLP decoder. This allows for view variation and full relightability, while reducing rendering costs and implementation complexity compared to the original asset representation. The assets can be integrated into a full renderer for path tracing. On the right we show the close-ups of these assets, demonstrating high-fidelity complex shading such as mulitple scattering and global illumination.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-lego">
+          <video poster="" id="lego" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/lego.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-flowers">
+          <video poster="" id="flowers" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/flowers.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-hair_blue">
+          <video poster="" id="hair_blue" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/hair_blue.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-hair_blonde_pink">
+          <video poster="" id="hair_blonde_pink" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/hair_blonde_pink.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-centered">
+          <img src="./static/images/teaser_outdoor_hq.png">
+          <p>Scene from the teaser under sun-sky lighting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+
+          <p>
+          High-fidelity 3D assets with materials composed of fibers (including hair), complex layered material shaders, or fine scattering geometry are ubiquitous in high-end realistic rendering applications. Rendering such models is computationally expensive due to heavy shaders and long scattering paths. Moreover, implementing the shading and scattering models is non-trivial and has to be done not only in the 3D content authoring software (which is necessarily complex), but also in all downstream rendering solutions. For example, web and mobile viewers for complex 3D assets are desirable, but frequently cannot support the full shading complexity allowed by the authoring application.
+          </p>
+          <p>
+          Our goal is to design a neural representation for 3D assets with complex shading that supports full relightability and full integration into existing renderers. We provide an end-to-end shading solution at the first intersection of a ray with the underlying geometry. All shading and scattering is precomputed and included in the neural asset; no multiple scattering paths need to be traced, and no complex shading models need to be implemented to render our assets, beyond a single neural architecture.
+          </p>
+          <p>
+          We combine an MLP decoder with a feature grid. Shading consists of querying a feature vector, followed by an MLP evaluation producing the final reflectance value. Our method provides high-fidelity shading, close to the ground-truth Monte Carlo estimate even at close-up views. We believe our neural assets could be used in practical renderers, providing significant speed-ups and simplifying renderer implementations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-centered">
+          <img src="./static/images/pipeline.png">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Overview of <span class="rna">Relightable Neural Assets</span> representation. On the left, we illustrate our triplane representation, consisting of XY, XZ and YZ planes each with 8 feature channels and a default resolution of 512 by 512. The feature vectors queried from the triplane representation are summed and passed into an MLP, along with additional properties. We show two configuration variants of relightable neural asset pipelines designed for surface rendering (middle) and fiber rendering (right), respectively. The main difference is that surfaces use a normal input, while fibers use tangent and cross-section offset. Both variants output two colors, one of which will be picked according to the visibility at render time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{mullia2023rna,
+      title={Relightable Neural Assets}, 
+      author={Krishna Mullia and Fujun Luan and Xin Sun and Milos Hasan},
+      year={2023},
+      eprint={2312.09398},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container is-max-desktop content has-text-justified">
+    <p>
+      We borrow the source code of this website <a href="https://github.com/nerfies/nerfies.github.io">from Nerfies</a>, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
