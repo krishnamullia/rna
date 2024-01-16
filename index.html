@@ -117,7 +117,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/teaser_studio.png">
+      <!-- <img src="./static/images/teaser_studio.png"> -->
+      <video poster="" id="teaser" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/teaser_small_ibl_relight.mp4"
+                type="video/mp4">
+      </video>
       <h4 class="content has-text-justified">
          We propose a compact relightable neural 3D asset representation for geometries with complex shading, such as the translucent Burley-Christensen shader combined with shading graphs in the lego and flowers, or fiber BCSDF model for blue and blonde curly-haired wigs that exhibit glossy highlights and strong multiple scattering. Our results are realistic and close to the path-tracing reference. Our representation combines explicit mesh (or fiber) geometry with a neural feature grid and an MLP decoder. This allows for view variation and full relightability, while reducing rendering costs and implementation complexity compared to the original asset representation. The assets can be integrated into a full renderer for path tracing. On the right we show the close-ups of these assets, demonstrating high-fidelity complex shading such as mulitple scattering and global illumination.
       </h2>
@@ -224,11 +228,10 @@
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
+    <div class="column is-full-width">
         <h2 class="title is-3">Production renderer integration</h2>
         <div class="content has-text-centered">
         <div class="content has-text-justified">
@@ -239,6 +242,10 @@
           <img src="./static/images/cycle_hair.jpg">
           <p>Path tracer integration on fiber-based asset. We integrate hair models into a production path tracer on CPU rendering. Our model significantly simplfies the shader implementation and improves the rendering performance. In contrast, blender path tracing exhibits severe Monte Carlo noise at equal rendering time budget.</p>
         </div>
+        <div class="content has-text-justified">
+          <img src="./static/images/teaser_outdoor_hq.png">
+          <p>Scene from the teaser path traced for global illumination under an outdoor sun-sky lighting, with the blue and blonde hair wigs, subsurface scattering lego and a basket of flowers rendered using our relightable neural 3D asset representation.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -247,17 +254,28 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-  <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Global illumination </h2>
-        <div class="content has-text-centered">
-        <div class="content has-text-justified">
-          <img src="./static/images/teaser_outdoor_hq.png">
-          <p>Scene from the teaser path traced for global illumination under an outdoor sun-sky lighting, with the blue and blonde hair wigs, subsurface scattering lego and a basket of flowers rendered using our relightable neural 3D asset representation.</p>
-        </div>
-      </div>
+    <div class="column is-full-width has-text-centered">
+      <h2 class="title is-3">Interactive Captures</h2>
+      <h2 class="subtitle is-5">(Small Model)</h2>
     </div>
-  </div>
+    <div class="column is-full-width">
+      <video poster="" id="teaser-interactive" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/teaser_interactive.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+    <div class="column is-full-width">
+      <video poster="" id="lego-dirlight" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/lego_dirlight.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+    <div class="column is-full-width">
+      <video poster="" id="lego-envlight" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/lego_env_light.mp4"
+                type="video/mp4">
+      </video>
+    </div>
   </div>
 </section>
 
