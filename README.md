@@ -1,17 +1,27 @@
 # Relightable Neural Assets
 
-This is the repository that contains source code for the [Relightable Neural Assets website](https://krishnamullia.com/rna).
+This is the repository that contains source code for the [RNA: Relightable Neural Assets website](https://krishnamullia.com/rna).
 
 If you find Relightable Neural Assets useful for your work please cite:
 ```
-@article{mullia2023rna,
-      title={Relightable Neural Assets}, 
-      author={Krishna Mullia and Fujun Luan and Xin Sun and Milos Hasan},
-      year={2023},
-      eprint={2312.09398},
-      archivePrefix={arXiv},
-      primaryClass={cs.GR}
-}
+@article{mullia2024rna,
+        author = {Mullia, Krishna and Luan, Fujun and Sun, Xin and Ha\v{s}an, Milo\v{s}},
+        title = {RNA: Relightable Neural Assets},
+        year = {2024},
+        issue_date = {February 2025},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        volume = {44},
+        number = {1},
+        issn = {0730-0301},
+        url = {https://doi.org/10.1145/3695866},
+        doi = {10.1145/3695866},
+        journal = {ACM Trans. Graph.},
+        month = oct,
+        articleno = {2},
+        numpages = {19},
+        keywords = {Rendering, raytracing, neural rendering, global illumination, relightable neural assets}
+  }
 ```
 
 # Website License
